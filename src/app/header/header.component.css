@@ -1,0 +1,78 @@
+.koko .logo{
+  background: transparent!important;
+  display: inline;
+}
+header{
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+.koko{
+  background: transparent!important;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  padding-left: 150px;
+  }
+.leftnav{
+  padding-left: 360px;
+}
+.leftnav a {
+  display: block;
+  text-align: center;
+  padding: 14px 13px;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  /*line-height: 33px;*/
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.koko2{
+  display: none;
+  padding: 0;
+  background-color: transparent;
+  margin: 0;
+  padding-top: 25px;
+  padding-left: 150px;
+
+}
+@media (max-width: 970px) {
+  .koko {
+    display: none;
+  }
+  .koko2{
+    display: inline;
+  }
+}
+.kok2 mat-sidenav-content{
+  background-color: transparent;
+  position: fixed;
+}
+.kok2{
+  background-color: transparent;
+}
+.kok2 mat-sidenav{
+  position: fixed;
+  max-height: 100%;
+  background:rgba(124, 29, 201, 0.80);
+  box-shadow: 0 0 10px #000000;
+  padding: 30px;
+}
+.kok2 mat-sidenav a{
+  color: #FFFFFF;
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.leftnav2{
+  padding-left: 480px;
+}
+.koko2 img{
+  padding-left: 80px;
+}
+/*li a:hover:not(.active) {*/
+/*}*/

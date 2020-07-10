@@ -1,0 +1,40 @@
+<header>
+  <mat-toolbar class="koko">
+    <mat-toolbar-row>
+      <a routerLink="/"><img src="assets/img/logo1.png" width="150px"></a>
+      <mat-toolbar-row class="leftnav">
+    <a routerLink="/">Главная</a>
+    <a routerLink="/services">Услуги</a>
+    <a routerLink="/about">Обо мне</a>
+    <a routerLink="/experience">Опыт</a>
+    <a routerLink="/skills">Навыки</a>
+    <a routerLink="/projects">Проекты</a>
+    <a routerLink="/contact">Контакты</a>
+      </mat-toolbar-row>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-toolbar class="koko2">
+    <mat-toolbar-row>
+      <a routerLink="/"><img src="assets/img/logo1.png" width="150px"></a>
+      <mat-toolbar-row class="leftnav2">
+        <a (click)="sidenav.toggle()"><img src="assets/img/open-menu.png" width="35px"></a>
+      </mat-toolbar-row>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container hidden class="kok2" >
+    <mat-sidenav #sidenav mode="side" >
+      <a routerLink="/">Главная</a>
+      <a routerLink="/services">Услуги</a>
+      <a routerLink="/about">Обо мне</a>
+      <a routerLink="/experience">Опыт</a>
+      <a routerLink="/skills">Навыки</a>
+      <a routerLink="/projects">Проекты</a>
+      <a routerLink="/contact">Контакты</a>
+    </mat-sidenav>
+    <mat-sidenav-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</header>

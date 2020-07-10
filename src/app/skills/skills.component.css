@@ -1,0 +1,117 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(233.23deg, #12054E 15.77%, #3D065F 69.31%, #45108A 88.49%);
+  position: fixed;
+}
+
+.content {
+  padding-top: 110px;
+  padding-left: 300px;
+}
+
+.title {
+  font-family: Open Sans, sans-serif;
+  font-size: 22px;
+  color: #FFFFFF;
+  font-style: initial;
+  position: absolute;
+}
+.skill1{
+  display: flex;
+  position: absolute;
+}
+.skill1 img{
+  display: inline;
+  width: 200px;
+  height: 100px;
+  margin-top: 50px;
+}
+.names{
+  color: #FFFFFF;
+  display: inline;
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  margin-top: 50px;
+
+}
+.skill1 p{
+  margin: 0 10px 20px 14px;;
+}
+
+.skill2{
+  display: flex;
+  margin-left: 500px;
+}
+.skill2 img{
+  display: inline;
+  width: 500px;
+  margin: 50px 0 0 20px;
+}
+
+.skill3{
+  display: flex;
+  position: absolute;
+  margin-top: 20px;
+}
+.skill3 img{
+  display: inline;
+  width: 200px;
+  height: 180px;
+  margin-top: 50px;
+}
+.skill3 p{
+  margin: 0 10px 20px 14px;;
+}
+
+.skill4{
+  display: flex;
+  position: absolute;
+  margin: 20px 0 0 500px;
+}
+.skill4 img{
+  display: inline;
+  width: 200px;
+  height: 180px;
+  margin-top: 50px;
+}
+.skill4 p{
+  margin: 0 10px 20px 14px;;
+}
+
+@media (max-width: 990px) {
+  .content{
+    max-width: 970px;
+    margin-top: 20px;
+    padding-left: 140px;
+  }
+  .skills1{
+    display: block;
+  }
+  .skill1 img{
+    width: 300px;
+  }
+  .skill2 img{
+    width: 500px;
+  }
+  .skill3 img{
+    width: 300px;
+  }
+  .skill4 img{
+    width: 300px;
+  }
+  .skill2{
+    margin: 200px 0 0 0;
+  }
+  .skills2{
+    display: block;
+  }
+  .skill4{
+    margin: 300px 0 0 0;
+  }
+}
+@media (max-width: 750px) {
+  .content{
+    max-width: none;
+  }
+}

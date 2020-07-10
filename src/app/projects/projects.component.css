@@ -1,0 +1,66 @@
+.container {
+  min-width: 100%;
+  min-height: 100%;
+  background: linear-gradient(233.23deg, #12054E 15.77%, #3D065F 69.31%, #45108A 88.49%);
+  position: fixed;
+  padding-bottom: 400px;
+}
+.content {
+  padding-top: 110px;
+  padding-left: 180px;
+  padding-right: 180px;
+  color: #FFFFFF;
+  padding-bottom: 400px;
+}
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label {
+  color: #FFFFFF;
+}
+mat-grid-list{
+  margin: 20px;
+  margin-left: 20px;
+}
+mat-grid-tile:hover{
+  box-shadow: 0 0 10px #000000;
+  padding: 5px;
+  width: 130%;
+ }
+mat-grid-tile img :hover{
+  width: 140%;
+}
+.title{
+  width: 394px;
+  height: 65px;
+  left: 111px;
+  top: 195px;
+  margin-left: 10px;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 65px;
+  color: #FFFFFF
+}
+
+@media (max-width: 970px) {
+  .content{
+    max-width: 750px;
+  }
+  mat-grid-list{
+    width: 100%;
+  }
+  .content{
+    padding:  100px 0 0 50px;
+  }
+  .title{
+    font-size: 24px;
+  }
+  mat-grid-tile{
+    width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  .content{
+    max-width: none;
+  }
+}
+

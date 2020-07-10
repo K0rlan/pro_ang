@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="content">
+    <h3>связаться со мной</h3>
+    <div class="fcolm">
+    <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1453.390441831018!2d76.9093207!3d43.2350535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883692f027581ad%3A0x2426740f56437e63!2z0JzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0YPQvdC40LLQtdGA0YHQuNGC0LXRgiDQuNC90YTQvtGA0LzQsNGG0LjQvtC90L3Ri9GFINGC0LXRhdC90L7Qu9C-0LPQuNC5!5e0!3m2!1sru!2skz!4v1594311802517!5m2!1sru!2skz" width="350" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+      <div class="icons">
+      <div class="s1"><img src="assets/img/phone-01.png"><p>87072470783</p></div>
+      <div class="s2"><img src="assets/img/mail-01.png"><p>omarova.koko@gmail.com</p></div>
+      <div class="s3"><img src="assets/img/vk-01.png"><p>@id498028195</p></div>
+      <div class="s4"> <img src="assets/img/insta.png"><p>@korlaaaaan</p></div>
+      </div></div>
+      <div class="contactme">
+    <form [formGroup]="myForm">
+      <div class="d1">
+    <mat-form-field appearance="none">
+      <input matInput  class="lol" type="text" placeholder="Ваше имя" name="name" formControlName="name">
+    </mat-form-field>
+    <div *ngIf="!myForm.controls['name'].valid && myForm.controls['name'].touched">
+      <div [hidden]="!myForm.controls['name'].errors.required">
+        Name is required
+      </div>
+    </div>
+      </div>
+      <div class="d1">
+    <mat-form-field appearance="none">
+      <input matInput type="email" placeholder="Ваш e-mail" name="email" formControlName="email">
+    </mat-form-field>
+    <div *ngIf="!myForm.controls['email'].valid && myForm.controls['email'].touched">
+      <div [hidden]="!myForm.controls['email'].errors.required">
+        E-mail is required
+      </div>
+    </div>
+    </div>
+      <br>
+      <div class="d2">
+    <mat-form-field appearance="none">
+      <input matInput type="number" placeholder="Ваш телефон" name="phone" formControlName="phone">
+    </mat-form-field>
+      </div>
+      <div class="d2">
+    <mat-form-field appearance="none">
+      <input matInput type="text" placeholder="Тема" name="title" formControlName="title">
+    </mat-form-field>
+      </div>
+      <br>
+    <mat-form-field appearance="none" class="mess">
+      <input matInput type="text" placeholder="Сообщение" name="message" formControlName="message">
+    </mat-form-field>
+    <br>
+    <button mat-button color="primary"  type="submit" (click)="submit()">Отправить</button>
+    </form>
+    </div>
+    </div>
+</div>
